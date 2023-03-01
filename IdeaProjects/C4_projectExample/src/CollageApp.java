@@ -3,6 +3,11 @@ import java.util.Scanner;
 
 public class CollageApp {
 
+//  #####  git commands
+/*
+         git commit -a -m "The Commit message"
+         git push
+ */
 
     String username;
     String role;
