@@ -139,6 +139,16 @@ public class CollageApp {
     }
 
     private void displayStudentById() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("insert student id");
+        String inputId = scan.next();
+
+        if (getStudentIndexById(inputId) == -1) {
+            System.out.println("Student Not Found!");
+        } else {
+            studentArrayList.get(getStudentIndexById(inputId)).displayInfo();
+        }
+
         displayOptions();
     }
     // ############### ADMIN Functions ###############
